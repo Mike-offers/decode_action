@@ -1,146 +1,37 @@
-//Wed Jan 15 2025 10:11:56 GMT+0000 (Coordinated Universal Time)
+//Wed Jan 15 2025 13:23:27 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-var t,
-  n = ["YXBwbHk=", "ZnVuY3Rpb24gKlwoICpcKQ==", "XCtcKyAqKD86XzB4KD86W2EtZjAtOV0pezQsNn18KD86XGJ8XGQpW2EtejAtOV17MSw0fSg/OlxifFxkKSk=", "dGVzdA==", "Y2hhaW4=", "aW5wdXQ=", "cmV0dXJuIChmdW5jdGlvbigpIA==", "e30uY29uc3RydWN0b3IoInJldHVybiB0aGlzIikoICk=", "Y29uc29sZQ==", "d2Fybg==", "ZGVidWc=", "ZXhjZXB0aW9u", "bG9n", "aW5mbw==", "ZXJyb3I=", "dHJhY2U=", "cGFyc2U=", "Ym9keQ==", "ZGF0YQ==", "cHJlbWl1bS5mb3JldmVy", "cGVybWlzc2lvbnM=", "cHJlbWl1bQ==", "cmVndWxhcg==", "cHVyY2hhc2U=", "cHJvZHVjdGlvbg==", "MTIwMDAyMzM1NjY2MzIx", "c3Vic2NyaXB0aW9uX3N0YXJ0ZWQ=", "YXBwbGVfZXh0cmE=", "b3JpZ2luYWxfYXBwbGljYXRpb25fdmVyc2lvbg==", "c3RyaW5naWZ5", "c3RyaW5n", "d2hpbGUgKHRydWUpIHt9", "Y291bnRlcg==", "bGVuZ3Ro", "Y29uc3RydWN0b3I=", "ZGVidQ==", "Z2dlcg==", "Y2FsbA==", "YWN0aW9u", "c3RhdGVPYmplY3Q="],
-  r = function (t, c) {
-    t -= 0;
-    var e = n[t];
-    if (0 === r.xMqVtb) {
-      !function () {
-        var t;
-        try {
-          var n = Function('return (function() {}.constructor("return this")( ));');
-          t = n();
-        } catch (n) {
-          t = window;
-        }
-        t.atob || (t.atob = function (t) {
-          for (var n, r, c = String(t).replace(/=+$/, ""), e = 0, o = 0, i = ""; r = c.charAt(o++); ~r && (e % 4 ? n = 64 * n + r : n = r, e++ % 4) ? i += String.fromCharCode(255 & n >> (-2 * e & 6)) : 0) r = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".indexOf(r);
-          return i;
-        });
-      }();
-      r.VccfBh = function (t) {
-        for (var n = atob(t), r = [], c = 0, e = n.length; c < e; c++) r += "%" + ("00" + n.charCodeAt(c).toString(16)).slice(-2);
-        return decodeURIComponent(r);
-      };
-      r.YBqYUl = {};
-      r.xMqVtb = !0;
-    }
-    var o = r.YBqYUl[t];
-    0 === o ? (e = r.VccfBh(e), r.YBqYUl[t] = e) : e = o;
-    return e;
-  },
-  c = (t = !0, function (n, c) {
-    var e = t ? function () {
-      if (c) {
-        var t = c[r("0x0")](n, arguments);
-        c = null;
-        return t;
-      }
-    } : function () {};
-    t = !1;
-    return e;
-  });
-!function () {
-  c(this, function () {
-    var t = new RegExp(r("0x1")),
-      n = new RegExp(r("0x2"), "i"),
-      c = x("init");
-    t[r("0x3")](c + r("0x4")) && n.test(c + r("0x5")) ? x() : c("0");
-  })();
-}();
-var e,
-  o,
-  i = (e = !0, function (t, n) {
-    var c = e ? function () {
-      if (n) {
-        var c = n[r("0x0")](t, arguments);
-        n = null;
-        return c;
-      }
-    } : function () {};
-    e = !1;
-    return c;
-  }),
-  a = i(this, function () {
-    var t,
-      n = function () {};
-    try {
-      var c = Function(r("0x6") + r("0x7") + ");");
-      t = c();
-    } catch (n) {
-      t = window;
-    }
-    t[r("0x8")] ? (t[r("0x8")][r("0xc")] = n, t[r("0x8")][r("0x9")] = n, t.console[r("0xa")] = n, t[r("0x8")][r("0xd")] = n, t.console[r("0xe")] = n, t[r("0x8")][r("0xb")] = n, t[r("0x8")][r("0xf")] = n) : t[r("0x8")] = function (t) {
-      var n = {};
-      n.log = t;
-      n[r("0x9")] = t;
-      n[r("0xa")] = t;
-      n.info = t;
-      n.error = t;
-      n[r("0xb")] = t;
-      n.trace = t;
-      return n;
-    }(n);
-  });
-function x(t) {
-  function n(t) {
-    if (typeof t === r("0x1e")) {
-      return function (t) {}.constructor(r("0x1f")).apply(r("0x20"));
-    }
-    1 !== ("" + t / t)[r("0x21")] || t % 20 == 0 ? function () {
-      return !0;
-    }[r("0x22")](r("0x23") + r("0x24"))[r("0x25")](r("0x26")) : function () {
-      return !1;
-    }.constructor(r("0x23") + r("0x24"))[r("0x0")](r("0x27"));
-    n(++t);
-  }
-  try {
-    if (t) {
-      return n;
-    }
-    n(0);
-  } catch (t) {}
-}
-{
-  a();
-  setInterval(function () {
-    x();
-  }, 4e3);
-  o = JSON[r("0x10")]($response[r("0x11")]);
-  o[r("0x12")].user_products = [{
-    id: r("0x13"),
-    store_id: "com.hassantaleb.SwiftCompiler.premium.forever",
-    type: 2,
-    duration: null
-  }];
-  o[r("0x12")][r("0x14")] = [{
-    id: r("0x15"),
-    active: 1,
-    renew_state: 1,
-    associated_product: r("0x13"),
-    started_timestamp: 1719882e3,
-    expiration_timestamp: null,
-    current_period_type: r("0x16"),
-    source: "appstore",
-    first_purchase_timestamp: 1719882e3,
-    grant_type: r("0x17"),
-    last_purchase_timestamp: 1719882e3,
-    renews_count: 0,
-    store_transactions: [{
-      environment: r("0x18"),
-      expiration_timestamp: null,
-      original_transaction_id: r("0x19"),
-      ownership_type: "owner",
-      transaction_id: r("0x19"),
-      transaction_timestamp: 1719882e3,
-      type: r("0x1a")
-    }]
-  }];
-  o[r("0x12")][r("0x1b")] = {};
-  o[r("0x12")][r("0x1b")][r("0x1c")] = "2";
-  $done({
-    body: JSON[r("0x1d")](o)
-  });
-}
+var _0x1c915e = JSON.parse($response.body);
+var _0x5f08f0 = {
+  productId: "vcus.subs.month12.func00.lev00.ver1",
+  quantity: 1,
+  originalTransactionId: "730000978197460",
+  transactionId: "730000978197460",
+  purchaseDateMs: "1665344803000",
+  expiresDateMs: "4092647115000",
+  promotionalOfferId: "",
+  autoRenewStatus: false,
+  offerCodeRefName: "",
+  gracePeriodExpiresDateMs: "",
+  isTrialPeriod: false,
+  isInIntroOfferPeriod: false,
+  originalPurchaseDateMs: "1665344805000",
+  inAppOwnershipType: "PURCHASED",
+  productType: "",
+  status: 1
+};
+var _0x3ee51e = {
+  latestReceiptInfo: [_0x5f08f0],
+  inApp: []
+};
+var _0x3769d3 = {
+  code: 0,
+  data: _0x3ee51e,
+  message: "success",
+  update: ""
+};
+_0x1c915e = _0x3769d3;
+var _0x365ac7 = {
+  body: JSON.stringify(_0x1c915e)
+};
+$done(_0x365ac7);
