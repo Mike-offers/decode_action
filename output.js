@@ -1,106 +1,146 @@
-//Wed Jan 15 2025 03:33:38 GMT+0000 (Coordinated Universal Time)
+//Wed Jan 15 2025 10:11:56 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-var encode_version = "jsjiami.com.v5";
-var _0x1ea913 = $response.body;
-var _0x55c02c = $request.url;
-const _0x19dba8 = "/api/user/getUserById";
-const _0xd80e77 = "https://pc7dong.com/";
-const _0x110c3b = "/api/user/getStartUpImages";
-const _0x1e00c5 = "/seveng/api/voice/updateUserVoice";
-if (typeof _0x1ea913 === "string") {
-  if (_0x55c02c.indexOf(_0xd80e77) !== -1) {
-    _0x1ea913 = _0x1ea913.replace(/"N"/g, "\"Y\"").replace(/"menberType":"[^"]+/g, "\"menberType\":\"VIP_MENBER");
-  }
-  var _0x323bcf;
-  try {
-    _0x323bcf = JSON.parse(_0x1ea913);
-    if (_0x55c02c.indexOf(_0x19dba8) !== -1) {
-      _0x323bcf.data.nickName = "https://t.me/GieGie777";
-      _0x323bcf.data.image = "https://zdimg.lifeweek.com.cn/app/20230410/16810960185662892.jpg";
-      _0x323bcf.data.vipName = "年卡会员";
-      _0x323bcf.data.valiEndTime = "2999-09-09 09:09:09";
-      _0x323bcf.data.valiStartTime = "2024-09-06 04:08:52";
-      _0x323bcf.data.vipDays = "365";
-      _0x323bcf.data.menberType = "VIP_MENBER";
-      _0x323bcf.data.isusedAdvert = "N";
-      _0x1ea913 = JSON.stringify(_0x323bcf);
-    }
-    if (_0x55c02c.indexOf(_0x110c3b) !== -1) {
-      delete _0x323bcf.data;
-      _0x1ea913 = JSON.stringify(_0x323bcf);
-    }
-    if (_0x55c02c.indexOf(_0x1e00c5) !== -1) {
-      _0x323bcf.msg = "https://t.me/GieGie777";
-      _0x1ea913 = JSON.stringify(_0x323bcf);
-    }
-  } catch (_0xad3be9) {
-    console.log("JSON 解析错误: " + _0xad3be9.message);
-  }
-}
-$done({
-  body: _0x1ea913
-});
-(function (_0x5d9a3a, _0x533a49, _0x3fb0e6) {
-  var _0x4833be = function () {
-    var _0x1aab56 = true;
-    return function (_0x399c4d, _0x5e8d7e) {
-      var _0x2a995d = _0x1aab56 ? function () {
-        {
-          if (_0x5e8d7e) {
-            {
-              var _0x9d24bd = _0x5e8d7e.apply(_0x399c4d, arguments);
-              _0x5e8d7e = null;
-              return _0x9d24bd;
-            }
-          }
+var t,
+  n = ["YXBwbHk=", "ZnVuY3Rpb24gKlwoICpcKQ==", "XCtcKyAqKD86XzB4KD86W2EtZjAtOV0pezQsNn18KD86XGJ8XGQpW2EtejAtOV17MSw0fSg/OlxifFxkKSk=", "dGVzdA==", "Y2hhaW4=", "aW5wdXQ=", "cmV0dXJuIChmdW5jdGlvbigpIA==", "e30uY29uc3RydWN0b3IoInJldHVybiB0aGlzIikoICk=", "Y29uc29sZQ==", "d2Fybg==", "ZGVidWc=", "ZXhjZXB0aW9u", "bG9n", "aW5mbw==", "ZXJyb3I=", "dHJhY2U=", "cGFyc2U=", "Ym9keQ==", "ZGF0YQ==", "cHJlbWl1bS5mb3JldmVy", "cGVybWlzc2lvbnM=", "cHJlbWl1bQ==", "cmVndWxhcg==", "cHVyY2hhc2U=", "cHJvZHVjdGlvbg==", "MTIwMDAyMzM1NjY2MzIx", "c3Vic2NyaXB0aW9uX3N0YXJ0ZWQ=", "YXBwbGVfZXh0cmE=", "b3JpZ2luYWxfYXBwbGljYXRpb25fdmVyc2lvbg==", "c3RyaW5naWZ5", "c3RyaW5n", "d2hpbGUgKHRydWUpIHt9", "Y291bnRlcg==", "bGVuZ3Ro", "Y29uc3RydWN0b3I=", "ZGVidQ==", "Z2dlcg==", "Y2FsbA==", "YWN0aW9u", "c3RhdGVPYmplY3Q="],
+  r = function (t, c) {
+    t -= 0;
+    var e = n[t];
+    if (0 === r.xMqVtb) {
+      !function () {
+        var t;
+        try {
+          var n = Function('return (function() {}.constructor("return this")( ));');
+          t = n();
+        } catch (n) {
+          t = window;
         }
-      } : function () {};
-      _0x1aab56 = false;
-      return _0x2a995d;
-    };
-  }();
-  var _0x653dc9 = _0x4833be(this, function () {
-    var _0x30036f = function () {};
-    var _0x40e05d = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-    if (!_0x40e05d.console) {
-      {
-        _0x40e05d.console = function (_0x15a0d9) {
-          var _0x3fb0e6 = {};
-          _0x3fb0e6.log = _0x15a0d9;
-          _0x3fb0e6.warn = _0x15a0d9;
-          _0x3fb0e6.debug = _0x15a0d9;
-          _0x3fb0e6.info = _0x15a0d9;
-          _0x3fb0e6.error = _0x15a0d9;
-          _0x3fb0e6.exception = _0x15a0d9;
-          _0x3fb0e6.trace = _0x15a0d9;
-          return _0x3fb0e6;
-        }(_0x30036f);
-      }
-    } else {
-      {
-        _0x40e05d.console.log = _0x30036f;
-        _0x40e05d.console.warn = _0x30036f;
-        _0x40e05d.console.debug = _0x30036f;
-        _0x40e05d.console.info = _0x30036f;
-        _0x40e05d.console.error = _0x30036f;
-        _0x40e05d.console.exception = _0x30036f;
-        _0x40e05d.console.trace = _0x30036f;
-      }
+        t.atob || (t.atob = function (t) {
+          for (var n, r, c = String(t).replace(/=+$/, ""), e = 0, o = 0, i = ""; r = c.charAt(o++); ~r && (e % 4 ? n = 64 * n + r : n = r, e++ % 4) ? i += String.fromCharCode(255 & n >> (-2 * e & 6)) : 0) r = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".indexOf(r);
+          return i;
+        });
+      }();
+      r.VccfBh = function (t) {
+        for (var n = atob(t), r = [], c = 0, e = n.length; c < e; c++) r += "%" + ("00" + n.charCodeAt(c).toString(16)).slice(-2);
+        return decodeURIComponent(r);
+      };
+      r.YBqYUl = {};
+      r.xMqVtb = !0;
     }
+    var o = r.YBqYUl[t];
+    0 === o ? (e = r.VccfBh(e), r.YBqYUl[t] = e) : e = o;
+    return e;
+  },
+  c = (t = !0, function (n, c) {
+    var e = t ? function () {
+      if (c) {
+        var t = c[r("0x0")](n, arguments);
+        c = null;
+        return t;
+      }
+    } : function () {};
+    t = !1;
+    return e;
   });
-  _0x653dc9();
-  _0x3fb0e6 = "al";
-  try {
-    _0x3fb0e6 += "ert";
-    _0x533a49 = encode_version;
-    if (!(typeof _0x533a49 !== "undefined" && _0x533a49 === "jsjiami.com.v5")) {
-      {
-        _0x5d9a3a[_0x3fb0e6]("删除版本号，js会定期弹窗，还请支持我们的工作");
+!function () {
+  c(this, function () {
+    var t = new RegExp(r("0x1")),
+      n = new RegExp(r("0x2"), "i"),
+      c = x("init");
+    t[r("0x3")](c + r("0x4")) && n.test(c + r("0x5")) ? x() : c("0");
+  })();
+}();
+var e,
+  o,
+  i = (e = !0, function (t, n) {
+    var c = e ? function () {
+      if (n) {
+        var c = n[r("0x0")](t, arguments);
+        n = null;
+        return c;
       }
+    } : function () {};
+    e = !1;
+    return c;
+  }),
+  a = i(this, function () {
+    var t,
+      n = function () {};
+    try {
+      var c = Function(r("0x6") + r("0x7") + ");");
+      t = c();
+    } catch (n) {
+      t = window;
     }
-  } catch (_0x546de7) {
-    _0x5d9a3a[_0x3fb0e6]("删除版本号，js会定期弹窗");
+    t[r("0x8")] ? (t[r("0x8")][r("0xc")] = n, t[r("0x8")][r("0x9")] = n, t.console[r("0xa")] = n, t[r("0x8")][r("0xd")] = n, t.console[r("0xe")] = n, t[r("0x8")][r("0xb")] = n, t[r("0x8")][r("0xf")] = n) : t[r("0x8")] = function (t) {
+      var n = {};
+      n.log = t;
+      n[r("0x9")] = t;
+      n[r("0xa")] = t;
+      n.info = t;
+      n.error = t;
+      n[r("0xb")] = t;
+      n.trace = t;
+      return n;
+    }(n);
+  });
+function x(t) {
+  function n(t) {
+    if (typeof t === r("0x1e")) {
+      return function (t) {}.constructor(r("0x1f")).apply(r("0x20"));
+    }
+    1 !== ("" + t / t)[r("0x21")] || t % 20 == 0 ? function () {
+      return !0;
+    }[r("0x22")](r("0x23") + r("0x24"))[r("0x25")](r("0x26")) : function () {
+      return !1;
+    }.constructor(r("0x23") + r("0x24"))[r("0x0")](r("0x27"));
+    n(++t);
   }
-})(window);
-encode_version = "jsjiami.com.v5";
+  try {
+    if (t) {
+      return n;
+    }
+    n(0);
+  } catch (t) {}
+}
+{
+  a();
+  setInterval(function () {
+    x();
+  }, 4e3);
+  o = JSON[r("0x10")]($response[r("0x11")]);
+  o[r("0x12")].user_products = [{
+    id: r("0x13"),
+    store_id: "com.hassantaleb.SwiftCompiler.premium.forever",
+    type: 2,
+    duration: null
+  }];
+  o[r("0x12")][r("0x14")] = [{
+    id: r("0x15"),
+    active: 1,
+    renew_state: 1,
+    associated_product: r("0x13"),
+    started_timestamp: 1719882e3,
+    expiration_timestamp: null,
+    current_period_type: r("0x16"),
+    source: "appstore",
+    first_purchase_timestamp: 1719882e3,
+    grant_type: r("0x17"),
+    last_purchase_timestamp: 1719882e3,
+    renews_count: 0,
+    store_transactions: [{
+      environment: r("0x18"),
+      expiration_timestamp: null,
+      original_transaction_id: r("0x19"),
+      ownership_type: "owner",
+      transaction_id: r("0x19"),
+      transaction_timestamp: 1719882e3,
+      type: r("0x1a")
+    }]
+  }];
+  o[r("0x12")][r("0x1b")] = {};
+  o[r("0x12")][r("0x1b")][r("0x1c")] = "2";
+  $done({
+    body: JSON[r("0x1d")](o)
+  });
+}
