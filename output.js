@@ -1,12 +1,28 @@
-//Wed Jan 15 2025 13:42:30 GMT+0000 (Coordinated Universal Time)
+//Thu Jan 16 2025 05:49:36 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-var body = $response.body;
-const url = $request.url;
-var obj = JSON.parse(body);
-const vip = "/member/userMemberHomePageV2";
-url.indexOf(vip) != -1 && (obj.data.memberInfos[0].isMember = 0, obj.data.memberInfos[0].memberLevel = 0, obj.data.memberInfos[0].memberExpirationTime = "2099/09/09", body = JSON.stringify(obj));
-var _0x576db2 = {
-  body: body
-};
-$done(_0x576db2);
+if (typeof $response !== "undefined" && $response.body) {
+  let body = JSON.parse($response.body);
+  function modifyObject(_0x549159) {
+    for (let _0x67e54b in _0x549159) {
+      if (_0x549159.hasOwnProperty(_0x67e54b)) {
+        if (typeof _0x549159[_0x67e54b] === "object" && _0x549159[_0x67e54b] !== null) modifyObject(_0x549159[_0x67e54b]);else switch (_0x67e54b) {
+          case "is_free":
+            _0x549159[_0x67e54b] = 1;
+            break;
+          case "is_vip":
+            _0x549159[_0x67e54b] = 0;
+            break;
+          case "free_status":
+            _0x549159[_0x67e54b] = 1;
+            break;
+        }
+      }
+    }
+  }
+  modifyObject(body);
+  $response.body = JSON.stringify(body);
+}
+$done({
+  "body": $response.body
+});
