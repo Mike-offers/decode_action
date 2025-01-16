@@ -1,28 +1,9 @@
-//Thu Jan 16 2025 05:49:36 GMT+0000 (Coordinated Universal Time)
+//Thu Jan 16 2025 06:51:55 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-if (typeof $response !== "undefined" && $response.body) {
-  let body = JSON.parse($response.body);
-  function modifyObject(_0x549159) {
-    for (let _0x67e54b in _0x549159) {
-      if (_0x549159.hasOwnProperty(_0x67e54b)) {
-        if (typeof _0x549159[_0x67e54b] === "object" && _0x549159[_0x67e54b] !== null) modifyObject(_0x549159[_0x67e54b]);else switch (_0x67e54b) {
-          case "is_free":
-            _0x549159[_0x67e54b] = 1;
-            break;
-          case "is_vip":
-            _0x549159[_0x67e54b] = 0;
-            break;
-          case "free_status":
-            _0x549159[_0x67e54b] = 1;
-            break;
-        }
-      }
-    }
-  }
-  modifyObject(body);
-  $response.body = JSON.stringify(body);
-}
+let body = JSON.parse($response.body);
+body.result && (body.result.schoolTrialExpirationTime = "2099-09-09", body.result.hasSchoolSubscription = true, body.result.schoolSubscriptionExpirationTime = "2099-09-09", body.result.username = "baby@baby.com");
+body = JSON.stringify(body).replace(/"subscription":\s*(null|\{[\s\S]*?\})/g, "\"subscription\": {\n    \"id\": 88888888,\n    \"subscriptionPackage\": {\n        \"imageUrls\": {\n            \"optimal\": \"https://api.v2.bookrclass.com/api/media/c3Vic2NyaXB0aW9uX3BhY2thZ2Uvcy9BL3NBMzZEYU14clkyTWxRYWVzWnJUcVBPVXUxbmh1SFQxN3hNTVd4ZmRmTi5wbmc=/original_2k.png\",\n            \"original_xl\": \"https://api.v2.bookrclass.com/api/media/c3Vic2NyaXB0aW9uX3BhY2thZ2Uvcy9BL3NBMzZEYU14clkyTWxRYWVzWnJUcVBPVXUxbmh1SFQxN3hNTVd4ZmRmTi5wbmc=/binary_256.png\",\n            \"original_s\": \"https://api.v2.bookrclass.com/api/media/c3Vic2NyaXB0aW9uX3BhY2thZ2Uvcy9BL3NBMzZEYU14clkyTWxRYWVzWnJUcVBPVXUxbmh1SFQxN3hNTVd4ZmRmTi5wbmc=/binary_128.png\",\n            \"original\": \"https://api.v2.bookrclass.com/api/media/c3Vic2NyaXB0aW9uX3BhY2thZ2Uvcy9BL3NBMzZEYU14clkyTWxRYWVzWnJUcVBPVXUxbmh1SFQxN3hNTVd4ZmRmTi5wbmc=/original.png\"\n        },\n        \"userCount\": 5,\n        \"id\": 2,\n        \"title\": \"Yearly\",\n        \"webshopId\": \"com.bookrclass.yearly\",\n        \"duration\": \"Year\",\n        \"appStoreId\": \"com.bookrclass.yearly\",\n        \"googlePlayId\": \"com.bookrclass.yearly\",\n        \"description\": \"Save money with a yearly subscription.\"\n    },\n    \"IsSchoolTrial\": false,\n    \"expirationTime\": \"2099-09-29T01:50:19.000000Z\"\n}");
 $done({
-  "body": $response.body
+  "body": body
 });
