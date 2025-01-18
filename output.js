@@ -1,11 +1,13 @@
-//Thu Jan 16 2025 08:17:14 GMT+0000 (Coordinated Universal Time)
+//Sat Jan 18 2025 05:34:56 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-var _0x4de48c = 7;
-var _0x41191a = $response.body;
-_0x4de48c = 11;
-var _0x130c64 = $request.url;
-var _0x41191a = $response.body.replace(/[\s\S]+/g, "{   \"Header\" : {     \"Msg\" : \"查询成功\",     \"Result\" : 0   },   \"Content\" : {     \"vip_type\" : 2,     \"end_time\" : \"2999-09-09 13:40:58\",     \"system_time\" : \"2024-05-12 13:41:28\",     \"is_vip\" : 1   } }");
+let body = JSON.parse($response.body);
+function modifyObject(_0x1916ab) {
+  for (let _0x36569b in _0x1916ab) {
+    _0x1916ab.hasOwnProperty(_0x36569b) && (typeof _0x1916ab[_0x36569b] === "object" && _0x1916ab[_0x36569b] !== null ? modifyObject(_0x1916ab[_0x36569b]) : (_0x36569b === "type_text" && (_0x1916ab[_0x36569b] = "永久会员"), _0x36569b === "type" && (_0x1916ab[_0x36569b] = "studio.2players.wardrobe.pro.lifetime"), _0x36569b === "expired_at" && (_0x1916ab[_0x36569b] = "2099-09-09")));
+  }
+}
+modifyObject(body);
 $done({
-  body: _0x41191a
+  body: JSON.stringify(body)
 });
