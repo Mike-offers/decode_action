@@ -1,116 +1,64 @@
-//Thu Jan 23 2025 06:49:53 GMT+0000 (Coordinated Universal Time)
+//Fri Jan 24 2025 04:58:18 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
 var encode_version = "jsjiami.com.v5";
 if (typeof $rocket !== "undefined") {
-  function getBoxJSValue(_0x487145) {
+  function getBoxJSValue(_0xbc8dbf) {
     try {
       if (typeof $persistentStore !== "undefined" && typeof $persistentStore.read === "function") {
         {
-          const _0x3254cf = $persistentStore.read(_0x487145);
-          console.log("🔍成功读取BoxJS值（$persistentStore）：" + _0x487145 + "=" + _0x3254cf);
-          return _0x3254cf;
+          const _0x3810bc = $persistentStore.read(_0xbc8dbf);
+          console.log("🔍 成功读取 BoxJS 值（$persistentStore）：" + _0xbc8dbf + " = " + _0x3810bc);
+          return _0x3810bc;
         }
       } else {
         if (typeof $prefs !== "undefined" && typeof $prefs.valueForKey === "function") {
-          const _0x252830 = $prefs.valueForKey(_0x487145);
-          console.log("🔍成功读取BoxJS值（$prefs）：" + _0x487145 + "=" + _0x252830);
-          return _0x252830;
+          const _0x1c0726 = $prefs.valueForKey(_0xbc8dbf);
+          console.log("? �ɹ���ȡ BoxJS ֵ��$prefs����" + _0xbc8dbf + " = " + _0x1c0726);
+          return _0x1c0726;
         } else {
-          console.log("⚠️ 无法检测到可用的 BoxJS 环境！");
+          {
+            console.log("⚠️ 无法检测到可用的 BoxJS 环境！");
+          }
         }
       }
-    } catch (_0x461256) {
-      console.log("⚠️读取BoxJS配置失败：" + _0x461256.message);
+    } catch (_0x16f453) {
+      console.log("?? ��ȡ BoxJS ����ʧ�ܣ�" + _0x16f453.message);
     }
     return null;
   }
   const scriptSwitch = getBoxJSValue("ddm.app_switch");
   const isScriptEnabled = scriptSwitch === "true" || scriptSwitch === true;
-  console.log("BoxJS配置读取：ddm.app_switch=" + scriptSwitch);
+  console.log("BoxJS 配置读取：ddm.app_switch = " + scriptSwitch);
   if (!isScriptEnabled) {
-    console.log("⛔️ BoxJS 配置禁用脚本，脚本停止运行");
-    $notification.post("⛔️脚本异常已终止运行⛔️", "🚨 检测到脚本开关未打开", "↘️点击访问频道解决问题↙️\nhttps://t.me/chxm1023/7\n配置Boxjs➡️订阅链接➡️打开开关即可使用");
+    console.log("?? BoxJS ���ý��ýű����ű�ֹͣ����");
+    $notification.post("?? �ű��쳣����ֹ����", "检测到脚本开关未开启", "📌 【Boxjs 配置指南】\n1️⃣ 配置地址： https://github.com/chavyleung/scripts\n2️⃣ 订阅链接： https://raw.githubusercontent.com/chxm1023/Script_X/main/ddm1023.boxjs.json\n\n📋 【使用说明】\n1️⃣ 添加订阅链接到 Boxjs\n2️⃣ 启用 [脚本开关] 并保存设置\n\n⚠️ 【注意事项】\n- 开关用于防止非法售卖脚本\n- 仅供学习体验，请勿传播或滥用\n- 建议 24 小时内删除，避免不必要问题\n\n🙏 感谢理解与支持！");
     $done();
   }
 }
-var chxm1023 = JSON.parse($response.body);
-chxm1023.entitlements = [{
-  entitlement: "premium",
-  granted_at: "2025-01-01T00:00:00.000Z",
-  expires_at: "2099-09-09T09:09:09.000Z",
-  vendor_sku: "droom.sleepIfUCanFree.premium.yearlyPromo.1",
-  vendor: "appstore",
-  will_renew: false,
-  active_intro_offer_type: "free_trial"
-}];
-$done({
-  body: JSON.stringify(chxm1023)
+var ddm = JSON.parse($response.body);
+Object.assign(ddm, {
+  plan: "year",
+  active: 1,
+  premium_access: "2099-09-09T09:09:09.000Z",
+  currency: "CNY",
+  subscribed: 1
 });
-(function (_0x238cec, _0x500a59, _0x27c92e) {
-  var _0x577838 = function () {
-    var _0x22bcdb = true;
-    return function (_0x15ab17, _0x141e38) {
-      var _0x405780 = _0x22bcdb ? function () {
-        if (_0x141e38) {
-          var _0x1c888f = _0x141e38.apply(_0x15ab17, arguments);
-          _0x141e38 = null;
-          return _0x1c888f;
-        }
-      } : function () {};
-      _0x22bcdb = false;
-      return _0x405780;
-    };
-  }();
-  var _0x34742a = _0x577838(this, function () {
-    var _0x231fd0 = function () {
-      return "dev";
-    };
-    var _0x4f680a = function () {
-      return "window";
-    };
-    var _0x5dd881 = function () {
-      var _0x550fbc = new RegExp("\\w+ *\\(\\) *{\\w+ *['|\"].+['|\"];? *}");
-      return !_0x550fbc.test(_0x231fd0.toString());
-    };
-    var _0x18d5c9 = function () {
-      var _0x4ce2f1 = new RegExp("(\\\\[x|u](\\w){2,4})+");
-      return _0x4ce2f1.test(_0x4f680a.toString());
-    };
-    var _0x333808 = function (_0x432180) {
-      var _0x2ab90b = 0 >> 1 + NaN;
-      if (_0x432180.indexOf("i" === _0x2ab90b)) {
-        _0x991246(_0x432180);
-      }
-    };
-    var _0x991246 = function (_0x981158) {
-      var _0x57b080 = 3 >> 1 + NaN;
-      if (_0x981158.indexOf("true"[3]) !== _0x57b080) {
-        _0x333808(_0x981158);
-      }
-    };
-    if (!_0x5dd881()) {
-      if (!_0x18d5c9()) {
-        _0x333808("indеxOf");
-      } else {
-        _0x333808("indexOf");
-      }
-    } else {
-      _0x333808("indеxOf");
-    }
-  });
-  _0x34742a();
-  _0x27c92e = "al";
+$done({
+  body: JSON.stringify(ddm)
+});
+(function (_0x10fe10, _0xd81c04, _0xf9e908) {
+  _0xf9e908 = "al";
   try {
-    _0x27c92e += "ert";
-    _0x500a59 = encode_version;
-    if (!(typeof _0x500a59 !== "undefined" && _0x500a59 === "jsjiami.com.v5")) {
-      {
-        _0x238cec[_0x27c92e]("删除版本号，js会定期弹窗，还请支持我们的工作");
+    {
+      _0xf9e908 += "ert";
+      _0xd81c04 = encode_version;
+      if (!(typeof _0xd81c04 !== "undefined" && _0xd81c04 === "jsjiami.com.v5")) {
+        _0x10fe10[_0xf9e908]("ɾ��版本号，js会定期弹窗，还请支持我们的工作");
       }
     }
-  } catch (_0x2423cf) {
-    _0x238cec[_0x27c92e]("删除版本号，js会定期弹窗");
+  } catch (_0x381bf9) {
+    _0x10fe10[_0xf9e908]("删除版本号，js会定期弹窗");
   }
 })(window);
 encode_version = "jsjiami.com.v5";
