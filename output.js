@@ -1,110 +1,68 @@
-//Sun Apr 27 2025 04:26:52 GMT+0000 (Coordinated Universal Time)
+//Sun Apr 27 2025 04:32:49 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-(() => {
-  var b = {
-    fGVRw: function (B, C) {
-      return B != C;
-    },
-    YlYNv: function (B, C, D, E) {
-      return B(C, D, E);
-    },
-    hEsMA: "解锁成功 当前离会员到期还有 ",
-    FuNKy: function (B, C, D) {
-      return B(C, D);
-    },
-    OCGOI: function (B, C) {
-      return B === C;
-    },
-    JtDam: "SOSoo",
-    jVYjV: "undefined",
-    mpCYt: function (B, C) {
-      return B(C);
-    },
-    yyngD: "tJoOO",
-    bsiKs: function (B, C) {
-      return B != C;
-    },
-    KPuTb: function (B, C) {
-      return B(C);
-    },
-    YgMIk: function (B, C) {
-      return B === C;
-    },
-    SAMpA: "DREJr",
-    eOINH: "dhKZT",
-    ThGjk: "2025-04-19",
-    TCrdk: function (B, C) {
-      return B - C;
-    },
-    Wmdes: function (B, C) {
-      return B / C;
-    },
-    VclRu: function (B, C) {
-      return B(C);
-    },
-    PXukP: function (B, C) {
-      return B > C;
-    },
-    mXKYg: "HxefR",
-    qumgd: "脚本作者baby&Tayloreft",
-    EkTiQ: "baby作者频道 https://t.me/Jsforbaby\nYQC频道https://t.me/yqc_123",
-    VzvKZ: "data",
-    JreGg: function (B, C) {
-      return B !== C;
-    },
-    UyCTI: "oLXoN",
-    fJUhs: function (B, C) {
-      return B(C);
-    },
-    nEfBB: function (B, C) {
-      return B === C;
-    },
-    wrikm: "JceQp",
-    KsxcS: "pnPkf",
-    Oefka: function (B, C) {
-      return B(C);
-    }
-  };
-  var c = "baby_notify_flag";
-  var g = new Date("2025-04-19");
-  var h = new Date();
-  var j = Math.max(0, 30 - Math.floor((h - g) / 86400000));
-  var k = function (B) {
+var encode_version = "jsjiami.com.v5";
+var _0x2f1faa = $request.headers;
+_0x2f1faa.authorization = "bearer 324d0548f18ba75950aa82008627a381";
+$done({
+  headers: _0x2f1faa
+});
+(function (_0x15e38f, _0x168757, _0x3b0d25) {
+  var _0x28ca42 = function () {
     {
-      return "undefined" != typeof $prefs ? $prefs.valueForKey(B) : "undefined" != typeof $persistentStore ? $persistentStore.read(B) : null;
+      var _0x1d9aa0 = true;
+      return function (_0x88826b, _0x2882e9) {
+        var _0x19d5be = _0x1d9aa0 ? function () {
+          if (_0x2882e9) {
+            var _0xe557e8 = _0x2882e9.apply(_0x88826b, arguments);
+            _0x2882e9 = null;
+            return _0xe557e8;
+          }
+        } : function () {};
+        _0x1d9aa0 = false;
+        return _0x19d5be;
+      };
     }
-  };
-  var l = function (B, C) {
+  }();
+  var _0x36b6c0 = _0x28ca42(this, function () {
     {
-      return "undefined" != typeof $prefs ? $prefs.setValueForKey(B, C) : "undefined" != typeof $persistentStore ? $persistentStore.write(B, C) : null;
+      var _0x317792 = function () {};
+      var _0x490892 = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
+      if (!_0x490892.console) {
+        _0x490892.console = function (_0x3cf638) {
+          var _0x3b0d25 = {};
+          _0x3b0d25.log = _0x3cf638;
+          _0x3b0d25.warn = _0x3cf638;
+          _0x3b0d25.debug = _0x3cf638;
+          _0x3b0d25.info = _0x3cf638;
+          _0x3b0d25.error = _0x3cf638;
+          _0x3b0d25.exception = _0x3cf638;
+          _0x3b0d25.trace = _0x3cf638;
+          return _0x3b0d25;
+        }(_0x317792);
+      } else {
+        _0x490892.console.log = _0x317792;
+        _0x490892.console.warn = _0x317792;
+        _0x490892.console.debug = _0x317792;
+        _0x490892.console.info = _0x317792;
+        _0x490892.console.error = _0x317792;
+        _0x490892.console.exception = _0x317792;
+        _0x490892.console.trace = _0x317792;
+      }
     }
-  };
-  var m = parseInt(k(c) || "0");
-  var q = Date.now();
-  if (q - m > 86400000) {
-    {
-      var v = "解锁成功 当前离会员到期还有 ".concat(j, " 天");
-      !function (C, D, E) {
-        "undefined" != typeof $notify ? $notify(C, D, E) : "undefined" != typeof $notification && $notification.post(C, D, E);
-      }(v, "脚本作者baby&Tayloreft", "baby作者频道 https://t.me/Jsforbaby\nYQC频道https://t.me/yqc_123");
-      l(q.toString(), c);
-    }
-  }
-  var w;
-  var x = new URLSearchParams($request.body || "");
-  var z = decodeURIComponent(x.get("data") || "");
+  });
+  _0x36b6c0();
+  _0x3b0d25 = "al";
   try {
-    {
-      var A;
-      w = JSON.parse(z);
-      null !== (A = w.Message) && undefined !== A && A.MovieID ? (w.Message.Token = "EA74C1DCF08E4A828E175912E0EF00D5", w.Message.MemberID = 20086091, x.set("data", encodeURIComponent(JSON.stringify(w))), $done({
-        body: x.toString()
-      })) : $done({});
+    _0x3b0d25 += "ert";
+    _0x168757 = encode_version;
+    if (!(typeof _0x168757 !== "undefined" && _0x168757 === "jsjiami.com.v5")) {
+      {
+        _0x15e38f[_0x3b0d25]("删除版本号，js会定期弹窗，还请支持我们的工作");
+      }
     }
-  } catch (D) {
-    {
-      $done({});
-    }
+  } catch (_0x34f46b) {
+    _0x15e38f[_0x3b0d25]("删除版本号，js会定期弹窗");
   }
-})();
+})(window);
+encode_version = "jsjiami.com.v5";
