@@ -1,68 +1,115 @@
-//Sat May 24 2025 00:28:11 GMT+0000 (Coordinated Universal Time)
+//Sat May 24 2025 03:05:27 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-var encode_version = "jsjiami.com.v5";
-var _0x2f1faa = $request.headers;
-_0x2f1faa.authorization = "bearer 324d0548f18ba75950aa82008627a381";
-$done({
-  headers: _0x2f1faa
-});
-(function (_0x15e38f, _0x168757, _0x3b0d25) {
-  var _0x28ca42 = function () {
-    {
-      var _0x1d9aa0 = true;
-      return function (_0x88826b, _0x2882e9) {
-        var _0x19d5be = _0x1d9aa0 ? function () {
-          if (_0x2882e9) {
-            var _0xe557e8 = _0x2882e9.apply(_0x88826b, arguments);
-            _0x2882e9 = null;
-            return _0xe557e8;
-          }
-        } : function () {};
-        _0x1d9aa0 = false;
-        return _0x19d5be;
-      };
-    }
-  }();
-  var _0x36b6c0 = _0x28ca42(this, function () {
-    {
-      var _0x317792 = function () {};
-      var _0x490892 = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-      if (!_0x490892.console) {
-        _0x490892.console = function (_0x3cf638) {
-          var _0x3b0d25 = {};
-          _0x3b0d25.log = _0x3cf638;
-          _0x3b0d25.warn = _0x3cf638;
-          _0x3b0d25.debug = _0x3cf638;
-          _0x3b0d25.info = _0x3cf638;
-          _0x3b0d25.error = _0x3cf638;
-          _0x3b0d25.exception = _0x3cf638;
-          _0x3b0d25.trace = _0x3cf638;
-          return _0x3b0d25;
-        }(_0x317792);
-      } else {
-        _0x490892.console.log = _0x317792;
-        _0x490892.console.warn = _0x317792;
-        _0x490892.console.debug = _0x317792;
-        _0x490892.console.info = _0x317792;
-        _0x490892.console.error = _0x317792;
-        _0x490892.console.exception = _0x317792;
-        _0x490892.console.trace = _0x317792;
+var t,
+  n = ["YXBwbHk=", "ZnVuY3Rpb24gKlwoICpcKQ==", "XCtcKyAqKD86XzB4KD86W2EtZjAtOV0pezQsNn18KD86XGJ8XGQpW2EtejAtOV17MSw0fSg/OlxifFxkKSk=", "dGVzdA==", "Y2hhaW4=", "aW5wdXQ=", "cmV0dXJuIChmdW5jdGlvbigpIA==", "e30uY29uc3RydWN0b3IoInJldHVybiB0aGlzIikoICk=", "Y29uc29sZQ==", "d2Fybg==", "ZGVidWc=", "ZXhjZXB0aW9u", "bG9n", "aW5mbw==", "ZXJyb3I=", "dHJhY2U=", "cGFyc2U=", "Ym9keQ==", "ZGF0YQ==", "cHJlbWl1bS5mb3JldmVy", "cGVybWlzc2lvbnM=", "cHJlbWl1bQ==", "cmVndWxhcg==", "cHVyY2hhc2U=", "cHJvZHVjdGlvbg==", "MTIwMDAyMzM1NjY2MzIx", "c3Vic2NyaXB0aW9uX3N0YXJ0ZWQ=", "YXBwbGVfZXh0cmE=", "b3JpZ2luYWxfYXBwbGljYXRpb25fdmVyc2lvbg==", "c3RyaW5naWZ5", "c3RyaW5n", "d2hpbGUgKHRydWUpIHt9", "Y291bnRlcg==", "bGVuZ3Ro", "Y29uc3RydWN0b3I=", "ZGVidQ==", "Z2dlcg==", "Y2FsbA==", "YWN0aW9u", "c3RhdGVPYmplY3Q="],
+  r = function (t, c) {
+    t -= 0;
+    var e = n[t];
+    undefined === r.xMqVtb && (!function () {
+      var t;
+      try {
+        var n = Function('return (function() {}.constructor("return this")( ));');
+        t = n();
+      } catch (n) {
+        t = window;
       }
-    }
+      t.atob || (t.atob = function (t) {
+        for (var n, r, c = String(t).replace(/=+$/, ""), e = 0, o = 0, i = ""; r = c.charAt(o++); ~r && (n = e % 4 ? 64 * n + r : r, e++ % 4) ? i += String.fromCharCode(255 & n >> (-2 * e & 6)) : 0) r = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".indexOf(r);
+        return i;
+      });
+    }(), r.VccfBh = function (t) {
+      for (var n = atob(t), r = [], c = 0, e = n.length; c < e; c++) r += "%" + ("00" + n.charCodeAt(c).toString(16)).slice(-2);
+      return decodeURIComponent(r);
+    }, r.YBqYUl = {}, r.xMqVtb = true);
+    var o = r.YBqYUl[t];
+    return undefined === o ? (e = r.VccfBh(e), r.YBqYUl[t] = e) : e = o, e;
+  },
+  c = (t = true, function (n, c) {
+    var e = t ? function () {
+      if (c) {
+        var t = c[r("0x0")](n, arguments);
+        return c = null, t;
+      }
+    } : function () {};
+    return t = false, e;
   });
-  _0x36b6c0();
-  _0x3b0d25 = "al";
-  try {
-    _0x3b0d25 += "ert";
-    _0x168757 = encode_version;
-    if (!(typeof _0x168757 !== "undefined" && _0x168757 === "jsjiami.com.v5")) {
-      {
-        _0x15e38f[_0x3b0d25]("删除版本号，js会定期弹窗，还请支持我们的工作");
+!function () {
+  c(this, function () {
+    var t = new RegExp(r("0x1")),
+      n = new RegExp(r("0x2"), "i"),
+      c = x("init");
+    t[r("0x3")](c + r("0x4")) && n.test(c + r("0x5")) ? x() : c("0");
+  })();
+}();
+var e,
+  o,
+  i = (e = true, function (t, n) {
+    var c = e ? function () {
+      if (n) {
+        var c = n[r("0x0")](t, arguments);
+        return n = null, c;
       }
+    } : function () {};
+    return e = false, c;
+  }),
+  a = i(this, function () {
+    var t,
+      n = function () {};
+    try {
+      var c = Function(r("0x6") + r("0x7") + ");");
+      t = c();
+    } catch (n) {
+      t = window;
     }
-  } catch (_0x34f46b) {
-    _0x15e38f[_0x3b0d25]("删除版本号，js会定期弹窗");
+    t[r("0x8")] ? (t[r("0x8")][r("0xc")] = n, t[r("0x8")][r("0x9")] = n, t.console[r("0xa")] = n, t[r("0x8")][r("0xd")] = n, t.console[r("0xe")] = n, t[r("0x8")][r("0xb")] = n, t[r("0x8")][r("0xf")] = n) : t[r("0x8")] = function (t) {
+      var n = {};
+      return n.log = t, n[r("0x9")] = t, n[r("0xa")] = t, n.info = t, n.error = t, n[r("0xb")] = t, n.trace = t, n;
+    }(n);
+  });
+function x(t) {
+  function n(t) {
+    if (typeof t === r("0x1e")) return function (t) {}.constructor(r("0x1f")).apply(r("0x20"));
+    1 !== ("" + t / t)[r("0x21")] || t % 20 == 0 ? function () {
+      return true;
+    }[r("0x22")](r("0x23") + r("0x24"))[r("0x25")](r("0x26")) : function () {
+      return false;
+    }.constructor(r("0x23") + r("0x24"))[r("0x0")](r("0x27")), n(++t);
   }
-})(window);
-encode_version = "jsjiami.com.v5";
+  try {
+    if (t) return n;
+    n(0);
+  } catch (t) {}
+}
+a(), setInterval(function () {
+  x();
+}, 4e3), o = JSON[r("0x10")]($response[r("0x11")]), o[r("0x12")].user_products = [{
+  id: r("0x13"),
+  store_id: "com.hassantaleb.SwiftCompiler.premium.forever",
+  type: 2,
+  duration: null
+}], o[r("0x12")][r("0x14")] = [{
+  id: r("0x15"),
+  active: 1,
+  renew_state: 1,
+  associated_product: r("0x13"),
+  started_timestamp: 1719882e3,
+  expiration_timestamp: null,
+  current_period_type: r("0x16"),
+  source: "appstore",
+  first_purchase_timestamp: 1719882e3,
+  grant_type: r("0x17"),
+  last_purchase_timestamp: 1719882e3,
+  renews_count: 0,
+  store_transactions: [{
+    environment: r("0x18"),
+    expiration_timestamp: null,
+    original_transaction_id: r("0x19"),
+    ownership_type: "owner",
+    transaction_id: r("0x19"),
+    transaction_timestamp: 1719882e3,
+    type: r("0x1a")
+  }]
+}], o[r("0x12")][r("0x1b")] = {}, o[r("0x12")][r("0x1b")][r("0x1c")] = "2", $done({
+  body: JSON[r("0x1d")](o)
+});
