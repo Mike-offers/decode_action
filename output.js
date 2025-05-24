@@ -1,153 +1,160 @@
-//Sat May 24 2025 03:25:48 GMT+0000 (Coordinated Universal Time)
+//Sat May 24 2025 15:51:31 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-(async () => {
-  const _0x1c2e7b = "https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/evn.js",
-    _0x13d660 = "https://cdn.jsdelivr.net/gh/xzxxn777/Surge@main/Utils/Utils.js",
-    _0x289002 = $request?.["headers"] || {},
-    _0x916dd8 = _0x289002["user-agent"] || _0x289002["User-Agent"] || "";
-  let _0x33b010 = "未知应用",
-    _0x71e991 = "🆓Eric专属脚本";
-  if (_0x916dd8.includes("Fizzt")) _0x33b010 = "快连加速器VPN";else {
-    if (_0x916dd8.includes("Banana")) _0x33b010 = "香蕉加速器VPN";else _0x916dd8.includes("RacingShield") && (_0x33b010 = "赛盾加速器VPN");
-  }
-  _0x71e991 += " " + _0x33b010;
-  _0x33b010 === "未知应用" && (typeof $notify !== "undefined" ? $notify(_0x71e991, "提示", "🆓解密脚本 未知应用，开始！") : console.log("🆓解密脚本 未知应用，开始！"));
-  try {
+(() => {
+  var f = {
+    kiagQ: "/asy/trailer.m3u8",
+    mByrL: function (B, C) {
+      return B !== C;
+    },
+    DnyNE: function (B, C) {
+      return B !== C;
+    },
+    XPJWi: "QHYZP",
+    rNZng: "&userId=1",
+    tKLDe: "&accessToken=",
+    oVxOF: function (B, C) {
+      return B(C);
+    },
+    RgMFW: function (B, C) {
+      return B === C;
+    },
+    vgVDh: "UsfbU",
+    qQORK: "SagzT",
+    UEWlq: "cYKBI",
+    UhQDD: "PDuvR",
+    yOTEZ: "DGbpR",
+    rDgPE: "mFRML",
+    wOTcU: "&device=",
+    eVuJj: function (B, C) {
+      return B(C);
+    },
+    SXLpx: function (B, C) {
+      return B == C;
+    },
+    uwaUU: "eefjs",
+    nLFtg: "fBycy",
+    NYrOb: "/info?bookId",
+    khlaF: "bCvbO",
+    zkjIt: function (B, C) {
+      return B(C);
+    },
+    YKWIa: function (B, C) {
+      return B === C;
+    },
+    epjKy: "IjAvV",
+    eAIhQ: function (B, C) {
+      return B === C;
+    },
+    wTEoW: "/shorter/user/getUser",
+    uhYPC: "https://t.me/GieGie777",
+    iUWEi: "/resource/getWindowNotice",
+    GYWrY: "/user/getVipPvg",
+    YBPFW: "video/search",
+    sblRq: "/shorter/video/longvideoinfo/info",
+    HDWRm: "eATbz",
+    NUgpA: "oUUtI",
+    abPtC: function (B, C) {
+      return B === C;
+    },
+    EvmKo: "dGisC",
+    QOtLH: "tXuLB",
+    gPCYM: "视频已解锁",
+    FEZpH: "userVip\":1",
+    KAynI: "trailer.m3u8",
+    kySNm: "/shorter/video/home/newlist",
+    ESSlB: "tryseeSecond\":9999",
+    voTLg: "isProducer\":1"
+  };
+  if ("undefined" == typeof $response) {
     {
-      const _0x2030b6 = await _0xf1734d(),
-        _0x354816 = new _0x2030b6(_0x71e991);
-      let _0x4b0f7a = $response?.["body"] || "";
-      try {
-        typeof _0x4b0f7a === "string" && (_0x4b0f7a = JSON.parse(_0x4b0f7a));
-      } catch {
-        return _0x354816.done({});
-      }
-      let _0x549b22,
-        _0x1045d9,
-        _0x25e2e8,
-        _0xc4b246 = false;
-      switch (_0x33b010) {
-        case "快连加速器VPN":
-          _0xc4b246 = _0x4b0f7a.prd_code_flg === 200;
-          _0x549b22 = _0x4b0f7a.prd_result_flg?.["prd_link_url_flg"];
-          _0x1045d9 = _0x25e2e8 = "929af8c0ac9dc557";
-          break;
-        case "香蕉加速器VPN":
-          _0xc4b246 = _0x4b0f7a.bio_code_tron === 200;
-          _0x549b22 = _0x4b0f7a.bio_result_tron?.["bio_link_url_tron"];
-          _0x1045d9 = _0x25e2e8 = "817a7baa5c74b982";
-          break;
-        case "赛盾加速器VPN":
-          _0xc4b246 = _0x4b0f7a.code === 200;
-          _0x549b22 = _0x4b0f7a.result?.["url"];
-          _0x1045d9 = _0x25e2e8 = "TmPrPhkOf8by0cvx";
-          break;
-        default:
-          return _0x354816.done({});
-      }
-      if (!_0xc4b246) return _0x354816.done({});
-      try {
-        const _0x333b5b = await _0x1e6d94(_0x354816),
-          _0x52d10d = _0x333b5b.createCryptoJS();
-        if (!_0x52d10d) throw new Error("CryptoJS 初始化失败");
-        if (!_0x549b22) throw new Error("未找到加密 URL");
-        const _0x28ee94 = decodeURIComponent(_0x549b22),
-          _0x3fc22b = _0x465ad2(_0x28ee94, _0x52d10d.enc.Utf8.parse(_0x1045d9), _0x52d10d.enc.Utf8.parse(_0x25e2e8), _0x52d10d, _0x354816);
-        _0x354816.msg(_0x354816.name, "✅Eric解密成功", _0x3fc22b);
-      } catch (_0x519e32) {
-        _0x354816.msg(_0x354816.name, "❎解密失败", _0x519e32.message);
-      } finally {
-        _0x354816.done({});
-      }
-    }
-  } catch {}
-  function _0x465ad2(_0x2b306b, _0x168abf, _0x5b3652, _0x3ff587, _0x12fc41) {
-    try {
-      const _0x1d162c = _0x3ff587.AES.decrypt(_0x2b306b, _0x168abf, {
-        "iv": _0x5b3652,
-        "mode": _0x3ff587.mode.CBC,
-        "padding": _0x3ff587.pad.Pkcs7
-      });
-      return _0x1d162c.toString(_0x3ff587.enc.Utf8);
-    } catch {
-      throw new Error("AES 解密失败");
-    }
-  }
-  async function _0x1e6d94(_0xf5f486) {
-    try {
-      const _0x8b1c34 = _0xf5f486.getdata("Utils_Code");
-      if (_0x8b1c34) {
+      var g = $request.url;
+      if (g.includes("/info?bookId")) {
         {
-          const _0x68411f = _0x28b146(_0x8b1c34, _0xf5f486);
-          if (_0x68411f) return _0xf5f486.log("✅Utils 缓存加载成功"), _0x68411f;
+          var h = g.replace(/(&userId=\d+)/, "&userId=1").replace(/(&accessToken=\w+)/, "&accessToken=").replace(/(&device=[a-zA-Z0-9-]+)/, "&device=");
+          var j = {
+            url: h
+          };
+          $done(j);
         }
+      } else {
+        $done({});
       }
-      const _0x2ca228 = await _0x39896a(_0x13d660, _0xf5f486);
-      if (_0x2ca228) {
-        {
-          _0xf5f486.setdata(_0x2ca228, "Utils_Code");
-          const _0x46c597 = _0x28b146(_0x2ca228, _0xf5f486);
-          if (_0x46c597) return _0xf5f486.log("✅Utils 下载并缓存成功"), _0x46c597;
-        }
-      }
-    } catch {}
-    throw new Error("❎Utils 加载失败");
-  }
-  function _0x28b146(_0xa9a4f3, _0x65b7c5) {
+    }
+  } else {
+    var k;
+    var m = $response.body;
+    var p = $request.url;
     try {
-      eval(_0xa9a4f3);
-      return typeof creatUtils === "function" ? creatUtils() : null;
-    } catch {
-      return null;
-    }
-  }
-  async function _0xf1734d() {
-    {
-      let _0x29b5b8 = $persistentStore?.["read"]("Eric_Env_Code") || "";
-      if (_0x29b5b8) {
-        const _0x1ffcf8 = _0x27cf68(_0x29b5b8);
-        if (_0x1ffcf8) {
-          console.log("✅Env 缓存加载成功");
-          return _0x1ffcf8;
-        }
+      {
+        k = JSON.parse(m);
       }
-      const _0x16321f = await _0x39896a(_0x1c2e7b);
-      if (_0x16321f) {
-        $persistentStore?.["write"](_0x16321f, "Eric_Env_Code");
-        const _0x231eed = _0x27cf68(_0x16321f);
-        if (_0x231eed) return console.log("✅Env 下载并缓存成功"), _0x231eed;
+    } catch (E) {
+      {
+        k = null;
       }
-      throw new Error("❎Env 加载失败");
     }
-  }
-  function _0x27cf68(_0x478d78) {
-    try {
-      eval(_0x478d78);
-      return typeof Env === "function" ? Env : null;
-    } catch {
-      return null;
-    }
-  }
-  function _0x39896a(_0x154b5d, _0x4ea006) {
-    return new Promise((_0x39e637, _0x58e60b) => {
-      if (typeof $httpClient !== "undefined") $httpClient.get({
-        "url": _0x154b5d
-      }, (_0xe9a5b5, _0x36f086, _0x1b148c) => {
+    if (k && (p.includes("/shorter/user/getUser") && (k.data.vipPvgList.forEach(function (G) {
+      return G.flag = 1;
+    }), k.data.nickname = "https://t.me/GieGie777", k.data.userVip = 2, k.data.expiredTime = 0, m = JSON.stringify(k)), p.includes("/adInfoPageList") && (k.data.forEach(function (G) {
+      {
+        return G.isDelete = 1;
+      }
+    }), k.data = [], m = JSON.stringify(k)), p.includes("/resource/getWindowNotice") && (delete k.data, m = JSON.stringify(k)), p.includes("tabIconConfigView/list") && (k.data[3] && (k.data[3].status = 0), m = JSON.stringify(k)), p.includes("/user/getVipPvg") && (k.data.vipPvgList.forEach(function (G) {
+      return G.flag = 1;
+    }), m = JSON.stringify(k)), p.includes("video/search") && (k.data.list.forEach(function (G) {
+      {
+        G.buyDelete = 1;
+        G.userVip = 1;
+        G.videoBuy = null;
+        G.isPurchase = 1;
+      }
+    }), m = JSON.stringify(k)), p.includes("/shorter/video/longvideoinfo/info"))) {
+      if (k.data && 1 !== k.data.isTrysee) {
         {
-          if (!_0xe9a5b5 && _0x36f086.status === 200) _0x39e637(_0x1b148c);else _0x58e60b(_0xe9a5b5 || new Error("状态码 " + _0x36f086.status));
-        }
-      });else {
-        if (typeof $task !== "undefined") {
-          $task.fetch({
-            "url": _0x154b5d
-          }).then(_0x8af430 => _0x39e637(_0x8af430.body), _0x58e60b);
-        } else {
-          if (typeof fetch !== "undefined") fetch(_0x154b5d).then(_0x4258f6 => _0x4258f6.ok ? _0x4258f6.text() : Promise.reject(new Error("状态码 " + _0x4258f6.status))).then(_0x39e637).catch(_0x58e60b);else {
-            _0x58e60b("不支持的运行环境");
+          var q = k.data.cosUrl;
+          var v = k.data.videoImage;
+          var w = k.data.videoUrlPre;
+          var x = "";
+          if (q) {
+            {
+              var y = q.split(",");
+              q = y[0].trim();
+            }
           }
+          if (w && null !== w) {
+            {
+              var z = v ? v.split("/")[0] : "";
+              x = "".concat(q, "/").concat(z, "/asy/trailer.m3u8");
+            }
+          } else {
+            if (v) {
+              {
+                var A = v.split("/")[0];
+                x = "".concat(q, "/").concat(A, "/asy/trailer.m3u8");
+              }
+            }
+          }
+          !function (J, K) {
+            {
+              var L;
+              var M = K;
+              var N = {
+                "open-url": M,
+                url: M
+              };
+              (null !== (L = this.$notify) && undefined !== L ? L : $notification.post)(J, "", "点击跳转系统浏览器播放", N);
+            }
+          }("视频已解锁", x);
+          m = m.replace(/try.m3u8/g, "trailer.m3u8").replace(/isPurchase":\d/g, "isPurchase\":1").replace(/userVip":\d/g, "userVip\":1").replace(/tryVideoUrl/g, x);
         }
+      } else {
+        m = m.replace(/try.m3u8/g, "trailer.m3u8").replace(/isPurchase":\d/g, "isPurchase\":1").replace(/userVip":\d/g, "userVip\":1").replace(/tryVideoUrl/g, "videoUrl");
       }
+    }
+    p.includes("/shorter/video/home/newlist") && (m = m.replace(/userVip":\d/g, "userVip\":1").replace(/tryseeSecond":\d/g, "tryseeSecond\":9999").replace(/isProducer":\d/g, "isProducer\":1"));
+    $done({
+      body: m
     });
   }
 })();
