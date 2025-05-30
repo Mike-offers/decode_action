@@ -1,98 +1,106 @@
-//Wed May 28 2025 14:03:57 GMT+0000 (Coordinated Universal Time)
+//Fri May 30 2025 04:25:56 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
 var encode_version = "jsjiami.com.v5";
-var _0x56f1f9 = $response.body;
-var _0x246f07 = $request.url;
-const _0x5ef41b = "/api/v1/getProgramList";
-const _0x105b53 = "/api/v1/getUserInfo";
-if (typeof _0x56f1f9 === "string") {
-  if (_0x246f07.indexOf(_0x5ef41b) !== -1) {
-    _0x56f1f9 = _0x56f1f9.replace(/free_type":\d/g, "free_type\":1");
+var _0x1ea913 = $response.body;
+var _0x55c02c = $request.url;
+const _0x19dba8 = "/api/user/getUserById";
+const _0xd80e77 = "https://pc7dong.com/";
+const _0x110c3b = "/api/user/getStartUpImages";
+const _0x1e00c5 = "/seveng/api/voice/updateUserVoice";
+if (typeof _0x1ea913 === "string") {
+  if (_0x55c02c.indexOf(_0xd80e77) !== -1) {
+    _0x1ea913 = _0x1ea913.replace(/"N"/g, "\"Y\"").replace(/"menberType":"[^"]+/g, "\"menberType\":\"VIP_MENBER");
   }
-  var _0x295325;
+  var _0x323bcf;
   try {
-    _0x295325 = JSON.parse(_0x56f1f9);
-    if (_0x246f07.indexOf(_0x105b53) !== -1) {
-      _0x295325.data.vip = 1;
-      _0x295325.data.vipOld = 1;
-      _0x295325.data.vip_endtimd = 32493834549;
-      _0x295325.data.vip_enddata = "2999-09-09";
-      _0x295325.data.username = "t.me/GieGie777";
-      _0x295325.data.is_vip = 1;
-      _0x56f1f9 = JSON.stringify(_0x295325);
+    _0x323bcf = JSON.parse(_0x1ea913);
+    if (_0x55c02c.indexOf(_0x19dba8) !== -1) {
+      _0x323bcf.data.nickName = "https://t.me/GieGie777";
+      _0x323bcf.data.image = "https://zdimg.lifeweek.com.cn/app/20230410/16810960185662892.jpg";
+      _0x323bcf.data.vipName = "年卡会员";
+      _0x323bcf.data.valiEndTime = "2999-09-09 09:09:09";
+      _0x323bcf.data.valiStartTime = "2024-09-06 04:08:52";
+      _0x323bcf.data.vipDays = "365";
+      _0x323bcf.data.menberType = "VIP_MENBER";
+      _0x323bcf.data.isusedAdvert = "N";
+      _0x1ea913 = JSON.stringify(_0x323bcf);
     }
-  } catch (_0x40d0d3) {
-    console.log("JSON 解析错误: " + _0x40d0d3.message);
+    if (_0x55c02c.indexOf(_0x110c3b) !== -1) {
+      delete _0x323bcf.data;
+      _0x1ea913 = JSON.stringify(_0x323bcf);
+    }
+    if (_0x55c02c.indexOf(_0x1e00c5) !== -1) {
+      _0x323bcf.msg = "https://t.me/GieGie777";
+      _0x1ea913 = JSON.stringify(_0x323bcf);
+    }
+  } catch (_0xad3be9) {
+    console.log("JSON 解析错误: " + _0xad3be9.message);
   }
 }
 $done({
-  body: _0x56f1f9
+  body: _0x1ea913
 });
-(function (_0x62f42a, _0x121eb5, _0x4cfbd5) {
-  var _0x5e3a79 = function () {
-    {
-      var _0x2eebb2 = true;
-      return function (_0x2ac3d9, _0x201b15) {
-        var _0x190c85 = _0x2eebb2 ? function () {
-          {
-            if (_0x201b15) {
-              var _0x160f00 = _0x201b15.apply(_0x2ac3d9, arguments);
-              _0x201b15 = null;
-              return _0x160f00;
+(function (_0x5d9a3a, _0x533a49, _0x3fb0e6) {
+  var _0x4833be = function () {
+    var _0x1aab56 = true;
+    return function (_0x399c4d, _0x5e8d7e) {
+      var _0x2a995d = _0x1aab56 ? function () {
+        {
+          if (_0x5e8d7e) {
+            {
+              var _0x9d24bd = _0x5e8d7e.apply(_0x399c4d, arguments);
+              _0x5e8d7e = null;
+              return _0x9d24bd;
             }
           }
-        } : function () {};
-        _0x2eebb2 = false;
-        return _0x190c85;
-      };
-    }
-  }();
-  var _0x3a97a4 = _0x5e3a79(this, function () {
-    {
-      var _0x4b5df1 = function () {};
-      var _0x2167ce = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-      if (!_0x2167ce.console) {
-        _0x2167ce.console = function (_0x410f1b) {
-          var _0x4cfbd5 = {};
-          _0x4cfbd5.log = _0x410f1b;
-          _0x4cfbd5.warn = _0x410f1b;
-          _0x4cfbd5.debug = _0x410f1b;
-          _0x4cfbd5.info = _0x410f1b;
-          _0x4cfbd5.error = _0x410f1b;
-          _0x4cfbd5.exception = _0x410f1b;
-          _0x4cfbd5.trace = _0x410f1b;
-          return _0x4cfbd5;
-        }(_0x4b5df1);
-      } else {
-        {
-          _0x2167ce.console.log = _0x4b5df1;
-          _0x2167ce.console.warn = _0x4b5df1;
-          _0x2167ce.console.debug = _0x4b5df1;
-          _0x2167ce.console.info = _0x4b5df1;
-          _0x2167ce.console.error = _0x4b5df1;
-          _0x2167ce.console.exception = _0x4b5df1;
-          _0x2167ce.console.trace = _0x4b5df1;
         }
+      } : function () {};
+      _0x1aab56 = false;
+      return _0x2a995d;
+    };
+  }();
+  var _0x653dc9 = _0x4833be(this, function () {
+    var _0x30036f = function () {};
+    var _0x40e05d = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
+    if (!_0x40e05d.console) {
+      {
+        _0x40e05d.console = function (_0x15a0d9) {
+          var _0x3fb0e6 = {};
+          _0x3fb0e6.log = _0x15a0d9;
+          _0x3fb0e6.warn = _0x15a0d9;
+          _0x3fb0e6.debug = _0x15a0d9;
+          _0x3fb0e6.info = _0x15a0d9;
+          _0x3fb0e6.error = _0x15a0d9;
+          _0x3fb0e6.exception = _0x15a0d9;
+          _0x3fb0e6.trace = _0x15a0d9;
+          return _0x3fb0e6;
+        }(_0x30036f);
+      }
+    } else {
+      {
+        _0x40e05d.console.log = _0x30036f;
+        _0x40e05d.console.warn = _0x30036f;
+        _0x40e05d.console.debug = _0x30036f;
+        _0x40e05d.console.info = _0x30036f;
+        _0x40e05d.console.error = _0x30036f;
+        _0x40e05d.console.exception = _0x30036f;
+        _0x40e05d.console.trace = _0x30036f;
       }
     }
   });
-  _0x3a97a4();
-  _0x4cfbd5 = "al";
+  _0x653dc9();
+  _0x3fb0e6 = "al";
   try {
-    {
-      _0x4cfbd5 += "ert";
-      _0x121eb5 = encode_version;
-      if (!(typeof _0x121eb5 !== "undefined" && _0x121eb5 === "jsjiami.com.v5")) {
-        {
-          _0x62f42a[_0x4cfbd5]("删除版本号，js会定期弹窗，还请支持我们的工作");
-        }
+    _0x3fb0e6 += "ert";
+    _0x533a49 = encode_version;
+    if (!(typeof _0x533a49 !== "undefined" && _0x533a49 === "jsjiami.com.v5")) {
+      {
+        _0x5d9a3a[_0x3fb0e6]("删除版本号，js会定期弹窗，还请支持我们的工作");
       }
     }
-  } catch (_0x971826) {
-    {
-      _0x62f42a[_0x4cfbd5]("删除版本号，js会定期弹窗");
-    }
+  } catch (_0x546de7) {
+    _0x5d9a3a[_0x3fb0e6]("删除版本号，js会定期弹窗");
   }
 })(window);
 encode_version = "jsjiami.com.v5";
