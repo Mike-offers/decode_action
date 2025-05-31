@@ -1,106 +1,110 @@
-//Fri May 30 2025 04:25:56 GMT+0000 (Coordinated Universal Time)
+//Sat May 31 2025 21:05:24 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-var encode_version = "jsjiami.com.v5";
-var _0x1ea913 = $response.body;
-var _0x55c02c = $request.url;
-const _0x19dba8 = "/api/user/getUserById";
-const _0xd80e77 = "https://pc7dong.com/";
-const _0x110c3b = "/api/user/getStartUpImages";
-const _0x1e00c5 = "/seveng/api/voice/updateUserVoice";
-if (typeof _0x1ea913 === "string") {
-  if (_0x55c02c.indexOf(_0xd80e77) !== -1) {
-    _0x1ea913 = _0x1ea913.replace(/"N"/g, "\"Y\"").replace(/"menberType":"[^"]+/g, "\"menberType\":\"VIP_MENBER");
+(() => {
+  var b = {
+    fGVRw: function (B, C) {
+      return B != C;
+    },
+    YlYNv: function (B, C, D, E) {
+      return B(C, D, E);
+    },
+    hEsMA: "解锁成功 当前离会员到期还有 ",
+    FuNKy: function (B, C, D) {
+      return B(C, D);
+    },
+    OCGOI: function (B, C) {
+      return B === C;
+    },
+    JtDam: "SOSoo",
+    jVYjV: "undefined",
+    mpCYt: function (B, C) {
+      return B(C);
+    },
+    yyngD: "tJoOO",
+    bsiKs: function (B, C) {
+      return B != C;
+    },
+    KPuTb: function (B, C) {
+      return B(C);
+    },
+    YgMIk: function (B, C) {
+      return B === C;
+    },
+    SAMpA: "DREJr",
+    eOINH: "dhKZT",
+    ThGjk: "2025-04-19",
+    TCrdk: function (B, C) {
+      return B - C;
+    },
+    Wmdes: function (B, C) {
+      return B / C;
+    },
+    VclRu: function (B, C) {
+      return B(C);
+    },
+    PXukP: function (B, C) {
+      return B > C;
+    },
+    mXKYg: "HxefR",
+    qumgd: "脚本作者baby&Tayloreft",
+    EkTiQ: "baby作者频道 https://t.me/Jsforbaby\nYQC频道https://t.me/yqc_123",
+    VzvKZ: "data",
+    JreGg: function (B, C) {
+      return B !== C;
+    },
+    UyCTI: "oLXoN",
+    fJUhs: function (B, C) {
+      return B(C);
+    },
+    nEfBB: function (B, C) {
+      return B === C;
+    },
+    wrikm: "JceQp",
+    KsxcS: "pnPkf",
+    Oefka: function (B, C) {
+      return B(C);
+    }
+  };
+  var c = "baby_notify_flag";
+  var g = new Date("2025-04-19");
+  var h = new Date();
+  var j = Math.max(0, 30 - Math.floor((h - g) / 86400000));
+  var k = function (B) {
+    {
+      return "undefined" != typeof $prefs ? $prefs.valueForKey(B) : "undefined" != typeof $persistentStore ? $persistentStore.read(B) : null;
+    }
+  };
+  var l = function (B, C) {
+    {
+      return "undefined" != typeof $prefs ? $prefs.setValueForKey(B, C) : "undefined" != typeof $persistentStore ? $persistentStore.write(B, C) : null;
+    }
+  };
+  var m = parseInt(k(c) || "0");
+  var q = Date.now();
+  if (q - m > 86400000) {
+    {
+      var v = "解锁成功 当前离会员到期还有 ".concat(j, " 天");
+      !function (C, D, E) {
+        "undefined" != typeof $notify ? $notify(C, D, E) : "undefined" != typeof $notification && $notification.post(C, D, E);
+      }(v, "脚本作者baby&Tayloreft", "baby作者频道 https://t.me/Jsforbaby\nYQC频道https://t.me/yqc_123");
+      l(q.toString(), c);
+    }
   }
-  var _0x323bcf;
+  var w;
+  var x = new URLSearchParams($request.body || "");
+  var z = decodeURIComponent(x.get("data") || "");
   try {
-    _0x323bcf = JSON.parse(_0x1ea913);
-    if (_0x55c02c.indexOf(_0x19dba8) !== -1) {
-      _0x323bcf.data.nickName = "https://t.me/GieGie777";
-      _0x323bcf.data.image = "https://zdimg.lifeweek.com.cn/app/20230410/16810960185662892.jpg";
-      _0x323bcf.data.vipName = "年卡会员";
-      _0x323bcf.data.valiEndTime = "2999-09-09 09:09:09";
-      _0x323bcf.data.valiStartTime = "2024-09-06 04:08:52";
-      _0x323bcf.data.vipDays = "365";
-      _0x323bcf.data.menberType = "VIP_MENBER";
-      _0x323bcf.data.isusedAdvert = "N";
-      _0x1ea913 = JSON.stringify(_0x323bcf);
+    {
+      var A;
+      w = JSON.parse(z);
+      null !== (A = w.Message) && undefined !== A && A.MovieID ? (w.Message.Token = "EA74C1DCF08E4A828E175912E0EF00D5", w.Message.MemberID = 20086091, x.set("data", encodeURIComponent(JSON.stringify(w))), $done({
+        body: x.toString()
+      })) : $done({});
     }
-    if (_0x55c02c.indexOf(_0x110c3b) !== -1) {
-      delete _0x323bcf.data;
-      _0x1ea913 = JSON.stringify(_0x323bcf);
+  } catch (D) {
+    {
+      $done({});
     }
-    if (_0x55c02c.indexOf(_0x1e00c5) !== -1) {
-      _0x323bcf.msg = "https://t.me/GieGie777";
-      _0x1ea913 = JSON.stringify(_0x323bcf);
-    }
-  } catch (_0xad3be9) {
-    console.log("JSON 解析错误: " + _0xad3be9.message);
   }
-}
-$done({
-  body: _0x1ea913
-});
-(function (_0x5d9a3a, _0x533a49, _0x3fb0e6) {
-  var _0x4833be = function () {
-    var _0x1aab56 = true;
-    return function (_0x399c4d, _0x5e8d7e) {
-      var _0x2a995d = _0x1aab56 ? function () {
-        {
-          if (_0x5e8d7e) {
-            {
-              var _0x9d24bd = _0x5e8d7e.apply(_0x399c4d, arguments);
-              _0x5e8d7e = null;
-              return _0x9d24bd;
-            }
-          }
-        }
-      } : function () {};
-      _0x1aab56 = false;
-      return _0x2a995d;
-    };
-  }();
-  var _0x653dc9 = _0x4833be(this, function () {
-    var _0x30036f = function () {};
-    var _0x40e05d = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-    if (!_0x40e05d.console) {
-      {
-        _0x40e05d.console = function (_0x15a0d9) {
-          var _0x3fb0e6 = {};
-          _0x3fb0e6.log = _0x15a0d9;
-          _0x3fb0e6.warn = _0x15a0d9;
-          _0x3fb0e6.debug = _0x15a0d9;
-          _0x3fb0e6.info = _0x15a0d9;
-          _0x3fb0e6.error = _0x15a0d9;
-          _0x3fb0e6.exception = _0x15a0d9;
-          _0x3fb0e6.trace = _0x15a0d9;
-          return _0x3fb0e6;
-        }(_0x30036f);
-      }
-    } else {
-      {
-        _0x40e05d.console.log = _0x30036f;
-        _0x40e05d.console.warn = _0x30036f;
-        _0x40e05d.console.debug = _0x30036f;
-        _0x40e05d.console.info = _0x30036f;
-        _0x40e05d.console.error = _0x30036f;
-        _0x40e05d.console.exception = _0x30036f;
-        _0x40e05d.console.trace = _0x30036f;
-      }
-    }
-  });
-  _0x653dc9();
-  _0x3fb0e6 = "al";
-  try {
-    _0x3fb0e6 += "ert";
-    _0x533a49 = encode_version;
-    if (!(typeof _0x533a49 !== "undefined" && _0x533a49 === "jsjiami.com.v5")) {
-      {
-        _0x5d9a3a[_0x3fb0e6]("删除版本号，js会定期弹窗，还请支持我们的工作");
-      }
-    }
-  } catch (_0x546de7) {
-    _0x5d9a3a[_0x3fb0e6]("删除版本号，js会定期弹窗");
-  }
-})(window);
-encode_version = "jsjiami.com.v5";
+})();
