@@ -1,85 +1,85 @@
-//Fri Aug 15 2025 14:38:09 GMT+0000 (Coordinated Universal Time)
+//Fri Aug 15 2025 14:44:04 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
 var encode_version = "jsjiami.com.v5";
-let _0x165fdc = typeof $response.body === "string" ? $response.body : JSON.stringify($response.body);
-const _0x3c6ed9 = $request.url || "";
-if (_0x3c6ed9.includes("/v1/vip/userinfo")) {
-  try {
-    const _0x10ddc2 = JSON.parse(_0x165fdc);
-    _0x10ddc2.data.is_vip = "2";
-    _0x10ddc2.data.had_vip = true;
-    _0x10ddc2.data.member_benefits[0].is_valid = "1";
-    _0x10ddc2.data.member_benefits[1].is_valid = "1";
-    _0x10ddc2.data.vip.vip_class = "2";
-    _0x10ddc2.data.vip.endtm = "99999999999999";
-    _0x10ddc2.data.vip.name = "超级会员";
-    _0x165fdc = JSON.stringify(_0x10ddc2);
-  } catch (_0x4d6303) {}
+var _0x20b0f3 = "NNpye3SlPH8ogRE5FvMQpl441jcRJ52VV92LJaH5b1g9SW1Awj-AHUeJEX12mhnebEBoR9I3VKKNiSWANvNZumtNEVfz5pk273Tzy91kaCQ";
+var _0x3ca307 = "378589771";
+var _0x55cfa8 = "F1B40EF33DFD3DFD3CFD3CFDC0F1DD9B5F9F0A9B5AC80AC4589F0D9F58CFCCCC";
+var _0x124c87 = $request.url;
+var _0x46dbba = /^http:\/\/(pvip\.funshion\.com\/v1\/vip\/playauth|pm\.funshion\.com\/v6\/media\/play)/;
+if (_0x46dbba.test(_0x124c87)) {
+  _0x124c87 = _0x124c87.replace(/([&?])token=[^&]*/g, "$1").replace(/([&?])user_id=[^&]*/g, "$1").replace(/([&?])fudid=[^&]*/g, "$1");
+  if (_0x124c87.indexOf("?") === -1) {
+    _0x124c87 += "?token=" + _0x20b0f3 + "&user_id=" + _0x3ca307 + "&fudid=" + _0x55cfa8;
+  } else {
+    _0x124c87 += "&token=" + _0x20b0f3 + "&user_id=" + _0x3ca307 + "&fudid=" + _0x55cfa8;
+  }
 }
 $done({
-  body: _0x165fdc
+  url: _0x124c87
 });
-(function (_0x23b233, _0x5db6ab, _0x272338) {
-  var _0x444d63 = function () {
-    var _0x228239 = true;
-    return function (_0x180f73, _0x37df38) {
-      var _0x5e2518 = _0x228239 ? function () {
-        {
-          if (_0x37df38) {
-            var _0x4ff069 = _0x37df38.apply(_0x180f73, arguments);
-            _0x37df38 = null;
-            return _0x4ff069;
-          }
-        }
-      } : function () {};
-      _0x228239 = false;
-      return _0x5e2518;
-    };
-  }();
-  var _0x339106 = _0x444d63(this, function () {
+(function (_0x2d7cea, _0x278318, _0x1aacfc) {
+  var _0x4a78fb = function () {
     {
-      var _0x11f561 = function () {};
-      var _0x4f7219 = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
-      if (!_0x4f7219.console) {
-        {
-          _0x4f7219.console = function (_0x4a23aa) {
+      var _0x44ab87 = true;
+      return function (_0x436ace, _0x1b9da0) {
+        var _0x32ea8b = _0x44ab87 ? function () {
+          if (_0x1b9da0) {
             {
-              var _0x272338 = {};
-              _0x272338.log = _0x4a23aa;
-              _0x272338.warn = _0x4a23aa;
-              _0x272338.debug = _0x4a23aa;
-              _0x272338.info = _0x4a23aa;
-              _0x272338.error = _0x4a23aa;
-              _0x272338.exception = _0x4a23aa;
-              _0x272338.trace = _0x4a23aa;
-              return _0x272338;
+              var _0x3c0283 = _0x1b9da0.apply(_0x436ace, arguments);
+              _0x1b9da0 = null;
+              return _0x3c0283;
             }
-          }(_0x11f561);
+          }
+        } : function () {};
+        _0x44ab87 = false;
+        return _0x32ea8b;
+      };
+    }
+  }();
+  var _0x492a14 = _0x4a78fb(this, function () {
+    {
+      var _0x4be49f = function () {};
+      var _0x11ac4e = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
+      if (!_0x11ac4e.console) {
+        {
+          _0x11ac4e.console = function (_0x45c651) {
+            var _0x1aacfc = {};
+            _0x1aacfc.log = _0x45c651;
+            _0x1aacfc.warn = _0x45c651;
+            _0x1aacfc.debug = _0x45c651;
+            _0x1aacfc.info = _0x45c651;
+            _0x1aacfc.error = _0x45c651;
+            _0x1aacfc.exception = _0x45c651;
+            _0x1aacfc.trace = _0x45c651;
+            return _0x1aacfc;
+          }(_0x4be49f);
         }
       } else {
         {
-          _0x4f7219.console.log = _0x11f561;
-          _0x4f7219.console.warn = _0x11f561;
-          _0x4f7219.console.debug = _0x11f561;
-          _0x4f7219.console.info = _0x11f561;
-          _0x4f7219.console.error = _0x11f561;
-          _0x4f7219.console.exception = _0x11f561;
-          _0x4f7219.console.trace = _0x11f561;
+          _0x11ac4e.console.log = _0x4be49f;
+          _0x11ac4e.console.warn = _0x4be49f;
+          _0x11ac4e.console.debug = _0x4be49f;
+          _0x11ac4e.console.info = _0x4be49f;
+          _0x11ac4e.console.error = _0x4be49f;
+          _0x11ac4e.console.exception = _0x4be49f;
+          _0x11ac4e.console.trace = _0x4be49f;
         }
       }
     }
   });
-  _0x339106();
-  _0x272338 = "al";
+  _0x492a14();
+  _0x1aacfc = "al";
   try {
-    _0x272338 += "ert";
-    _0x5db6ab = encode_version;
-    if (!(typeof _0x5db6ab !== "undefined" && _0x5db6ab === "jsjiami.com.v5")) {
-      _0x23b233[_0x272338]("删除版本号，js会定期弹窗，还请支持我们的工作");
+    _0x1aacfc += "ert";
+    _0x278318 = encode_version;
+    if (!(typeof _0x278318 !== "undefined" && _0x278318 === "jsjiami.com.v5")) {
+      {
+        _0x2d7cea[_0x1aacfc]("删除版本号，js会定期弹窗，还请支持我们的工作");
+      }
     }
-  } catch (_0x4e6f1b) {
-    _0x23b233[_0x272338]("删除版本号，js会定期弹窗");
+  } catch (_0xfd0968) {
+    _0x2d7cea[_0x1aacfc]("删除版本号，js会定期弹窗");
   }
 })(window);
 encode_version = "jsjiami.com.v5";
