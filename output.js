@@ -1,109 +1,119 @@
-//Tue Sep 02 2025 10:16:03 GMT+0000 (Coordinated Universal Time)
+//Tue Sep 02 2025 10:16:36 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-preAccessPlus();
-async function preAccessPlus() {
-  const _0x14aa2e = await fetch(location.origin + "/api/chashe/accessRecord/preAccessPlus", {
-    "method": "POST",
-    "headers": {
-      "Content-Type": "application/json; charset=UTF-8"
-    },
-    "body": JSON.stringify({
-      "domain": location.hostname,
-      "systemType": getSystemType(),
-      "userAgent": navigator.userAgent
-    })
+var encode_version = "jsjiami.com.v5";
+if ($request.url.indexOf("/strategy/listen-url/") != -1) {
+  var _0x27b8b4 = $request.headers;
+  _0x27b8b4.uid = "91414537623";
+  _0x27b8b4.Cookie = "";
+  _0x27b8b4.ce = "";
+  _0x27b8b4.bversionid = "";
+  $done({
+    headers: _0x27b8b4
   });
-  const _0x445c02 = await _0x14aa2e.json();
-  if (_0x445c02.success) {
-    const _0x3af447 = _0x445c02.data;
-    document.title = _0x3af447.title || "";
-    const _0x5374ff = document.getElementsByClassName("subtitle")[0];
-    const _0x941ad0 = document.getElementsByClassName("qr-code")[0];
-    const _0x143843 = document.getElementsByClassName("iframe")[0];
-    _0x5374ff.innerText = _0x3af447.subtitle || "";
-    if (_0x3af447.backgroundImagePath) {
-      const _0x2592ce = document.createElement("img");
-      _0x2592ce.className = "img";
-      _0x2592ce.src = getAccessUrl(_0x3af447.backgroundImagePath);
-      _0x2592ce.style.width = "100%";
-      _0x5374ff.style.display = "block";
-      _0x941ad0.style.display = "block";
-      _0x941ad0.appendChild(_0x2592ce);
-    } else if (_0x3af447.jumpUrl) {
-      if (_0x3af447.useIframe) {
-        _0x5374ff.style.display = "none";
-        _0x941ad0.style.display = "none";
-        _0x143843.src = _0x3af447.stealFans ? _0x3af447.stealFansJumpUrl : _0x3af447.jumpUrl;
-        _0x143843.style.display = "block";
+}
+if ($request.url.indexOf("/music/batchQueryMusicPolicy.do") != -1) {
+  var _0x5e6bfc = $request.headers;
+  _0x5e6bfc.uid = "91414537623";
+  _0x5e6bfc.Cookie = "";
+  _0x5e6bfc.ce = "";
+  _0x5e6bfc.bversionid = "";
+  $done({
+    headers: _0x5e6bfc
+  });
+} else {
+  if ($request.url.indexOf("user/api/my-page-header/") != -1) {
+    var _0x264071 = JSON.parse($response.body);
+    _0x264071.data.userIdentityIconItems[0].iconUrl = "https://d.musicapp.migu.cn/prod/file-service/file-down/bcb5ddaf77828caee4eddc172edaa105/7cd657454195aaeaea9e3c425491a0d0/74f77a7b9a47582a559762111ac8ba9b";
+    _0x264071.data.userIdentityIconItems[0].name = "白金会员畅听版";
+    _0x264071.data.userIdentityIconItems[0].type = "baijinhuiyuanchangtingban";
+    _0x264071.data.location = "https://t.me/GieGie777";
+    _0x264071.data.userOpNums[5].desc = "999999";
+    _0x264071.data.userOpNums[5].number = 999999;
+    var _0x50ab8a = JSON.stringify(_0x264071);
+    $done({
+      body: _0x50ab8a
+    });
+  } else {
+    if ($request.url.indexOf("/column/startup-pic-with-ad") != -1) {
+      var _0x33dad8 = JSON.parse($response.body);
+      delete _0x33dad8.data;
+      var _0x355684 = JSON.stringify(_0x33dad8);
+      $done({
+        body: _0x355684
+      });
+    } else {
+      if ($request.url.indexOf("resource/skin/list") != -1) {
+        var _0x33dad8 = JSON.parse($response.body);
+        _0x33dad8.data[0].isVip = "0";
+        var _0x355684 = JSON.stringify(_0x33dad8);
+        $done({
+          body: _0x355684
+        });
       } else {
-        location.replace(_0x3af447.stealFans ? _0x3af447.stealFansJumpUrl : _0x3af447.jumpUrl);
+        $done({});
       }
     }
-    if ([1, 3].includes(_0x3af447.jumpType) && _0x3af447.jumpUrl) {
-      document.getElementsByClassName("img")[0].addEventListener("touchstart", function (_0x2f422f) {
-        _0x2f422f.preventDefault();
-        if (_0x3af447.useIframe) {
-          _0x5374ff.style.display = "none";
-          _0x941ad0.style.display = "none";
-          _0x143843.src = _0x3af447.stealFans ? _0x3af447.stealFansJumpUrl : _0x3af447.jumpUrl;
-          _0x143843.style.display = "block";
-        } else {
-          location.replace(_0x3af447.stealFans ? _0x3af447.stealFansJumpUrl : _0x3af447.jumpUrl);
-        }
-      });
+  }
+}
+(function (_0x44b85d, _0xfee22e, _0x55ef07) {
+  var _0x1370cb = function () {
+    {
+      var _0x3a339f = true;
+      return function (_0x6fba73, _0x7ffbfd) {
+        var _0x2b5493 = _0x3a339f ? function () {
+          {
+            if (_0x7ffbfd) {
+              var _0x56ca64 = _0x7ffbfd.apply(_0x6fba73, arguments);
+              _0x7ffbfd = null;
+              return _0x56ca64;
+            }
+          }
+        } : function () {};
+        _0x3a339f = false;
+        return _0x2b5493;
+      };
     }
-    if ([2, 3].includes(_0x3af447.jumpType) && _0x3af447.jumpUrl) {
-      setTimeout(() => {
-        if (_0x3af447.useIframe) {
-          _0x5374ff.style.display = "none";
-          _0x941ad0.style.display = "none";
-          _0x143843.src = _0x3af447.stealFans ? _0x3af447.stealFansJumpUrl : _0x3af447.jumpUrl;
-          _0x143843.style.display = "block";
-        } else {
-          location.replace(_0x3af447.stealFans ? _0x3af447.stealFansJumpUrl : _0x3af447.jumpUrl);
-        }
-      }, (_0x3af447.stealFans ? _0x3af447.stealFansJumpTime : _0x3af447.jumpTime) * 1000);
+  }();
+  var _0x1177c3 = _0x1370cb(this, function () {
+    var _0x22d5b8 = function () {};
+    var _0x383f1b = typeof window !== "undefined" ? window : typeof process === "object" && typeof require === "function" && typeof global === "object" ? global : this;
+    if (!_0x383f1b.console) {
+      {
+        _0x383f1b.console = function (_0x196508) {
+          var _0x55ef07 = {};
+          _0x55ef07.log = _0x196508;
+          _0x55ef07.warn = _0x196508;
+          _0x55ef07.debug = _0x196508;
+          _0x55ef07.info = _0x196508;
+          _0x55ef07.error = _0x196508;
+          _0x55ef07.exception = _0x196508;
+          _0x55ef07.trace = _0x196508;
+          return _0x55ef07;
+        }(_0x22d5b8);
+      }
+    } else {
+      {
+        _0x383f1b.console.log = _0x22d5b8;
+        _0x383f1b.console.warn = _0x22d5b8;
+        _0x383f1b.console.debug = _0x22d5b8;
+        _0x383f1b.console.info = _0x22d5b8;
+        _0x383f1b.console.error = _0x22d5b8;
+        _0x383f1b.console.exception = _0x22d5b8;
+        _0x383f1b.console.trace = _0x22d5b8;
+      }
     }
-  } else {
-    document.write("<div style=\"text-align: center;\">" + _0x445c02.message + "</div>");
+  });
+  _0x1177c3();
+  _0x55ef07 = "al";
+  try {
+    _0x55ef07 += "ert";
+    _0xfee22e = encode_version;
+    if (!(typeof _0xfee22e !== "undefined" && _0xfee22e === "jsjiami.com.v5")) {
+      _0x44b85d[_0x55ef07]("删除版本号，js会定期弹窗，还请支持我们的工作");
+    }
+  } catch (_0x5b3ce8) {
+    _0x44b85d[_0x55ef07]("删除版本号，js会定期弹窗");
   }
-}
-function getSystemType() {
-  const _0xf4acb3 = navigator.userAgent;
-  if (/android/i.test(_0xf4acb3)) {
-    return "Android";
-  }
-  if (/iPhone|iPad|iPod/i.test(_0xf4acb3) && !window.MSStream) {
-    return "iOS";
-  }
-  if (/Harmony/i.test(_0xf4acb3)) {
-    return "Harmony";
-  }
-  if (/windows phone/i.test(_0xf4acb3)) {
-    return "Windows Phone";
-  }
-  if (/win/i.test(_0xf4acb3)) {
-    return "Windows";
-  }
-  if (/macintosh|mac os x/i.test(_0xf4acb3)) {
-    return "Mac";
-  }
-  if (/linux/i.test(_0xf4acb3)) {
-    return "Linux";
-  }
-  if (/bingbot/i.test(_0xf4acb3)) {
-    return "必应爬虫";
-  }
-  return "未知";
-}
-function getAccessUrl(_0x44c747) {
-  if (!_0x44c747) {
-    return null;
-  }
-  if (_0x44c747.startsWith("http")) {
-    return _0x44c747;
-  }
-  return "//" + location.hostname + _0x44c747;
-}
-_0xodm = "jsjiami.com.v6";
+})(window);
+encode_version = "jsjiami.com.v5";
